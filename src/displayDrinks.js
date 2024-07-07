@@ -26,6 +26,7 @@ const displayDrinks = async ({ drinks }) => {
     .join('')
   HideLoad()
   section.innerHTML = newDrinks
+  title.textContent = ' '
   return section
 }
 export default displayDrinks
