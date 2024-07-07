@@ -1,4 +1,7 @@
+import { ShowLoad } from "./toggleLoading.js"
+
 const fetchDrinks = async (url) => {
+  ShowLoad()
   try {
     const response = await fetch(url)
     const data = await response.json()

@@ -1,10 +1,12 @@
 import get from './getElement.js'
 import { input, form } from './searchForm.js'
+import { HideLoad} from './toggleLoading.js'
 
 const displayDrinks = async ({ drinks }) => {
   const section = get('.section-center')
   const title = get('.title')
   if (!drinks) {
+    HideLoad()
     title.textContent = `Sorry, no drink matched you search`
     section.innerHTML = null
     return
@@ -22,6 +24,8 @@ const displayDrinks = async ({ drinks }) => {
     `
     })
     .join('')
+  HideLoad()
   section.innerHTML = newDrinks
+  return section
 }
 export default displayDrinks
