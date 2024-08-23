@@ -10,7 +10,7 @@ const fetchDrinks = async (url) => {
     }
     throw new Error('Bad request or the API is broken')
   } catch (error) {
-    console.log('Fetching went wrong')
+    console.log('Fetching went wrong, the link is wright wrongly')
   }
 }
 

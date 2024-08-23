@@ -267,8 +267,7 @@ input::placeholder {
 .single-drink {
   width: 85vw;
   max-width: var(--max-width);
-  margin: 0 auto;
-  margin-top: 4rem;
+  margin: 4rem auto;
 }
 .drink-img {
   width: 100%;
@@ -283,6 +282,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
+    margin: 20% auto;
   }
 }
 .drink-info {
